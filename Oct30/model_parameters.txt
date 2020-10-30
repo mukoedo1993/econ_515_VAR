@@ -1,0 +1,131 @@
+> summary(Model1)
+
+VAR Estimation Results:
+========================= 
+Endogenous variables: jpy, can, cny, interest, inflation 
+Deterministic variables: const 
+Sample size: 2581 
+Log Likelihood: 42357.318 
+Roots of the characteristic polynomial:
+0.5216 0.5216 0.5068 0.5068 0.4269
+Call:
+VAR(y = v1, p = 1, type = "const", exogen = NULL)
+
+
+Estimation results for equation jpy: 
+==================================== 
+jpy = jpy.l1 + can.l1 + cny.l1 + interest.l1 + inflation.l1 + const 
+
+               Estimate Std. Error t value Pr(>|t|)    
+jpy.l1       -5.127e-01  1.832e-02 -27.988  < 2e-16 ***
+can.l1        3.434e-02  1.944e-02   1.766   0.0775 .  
+cny.l1       -1.339e-01  6.350e-02  -2.109   0.0350 *  
+interest.l1   3.831e-02  5.372e-03   7.132 1.28e-12 ***
+inflation.l1 -1.679e-02  4.090e-03  -4.107 4.14e-05 ***
+const        -8.404e-06  1.499e-04  -0.056   0.9553    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.007618 on 2575 degrees of freedom
+Multiple R-Squared: 0.2498,	Adjusted R-squared: 0.2484 
+F-statistic: 171.5 on 5 and 2575 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation can: 
+==================================== 
+can = jpy.l1 + can.l1 + cny.l1 + interest.l1 + inflation.l1 + const 
+
+               Estimate Std. Error t value Pr(>|t|)    
+jpy.l1        4.988e-03  1.654e-02   0.302  0.76295    
+can.l1       -5.279e-01  1.755e-02 -30.080  < 2e-16 ***
+cny.l1       -3.756e-02  5.732e-02  -0.655  0.51235    
+interest.l1  -5.715e-03  4.849e-03  -1.179  0.23866    
+inflation.l1 -1.052e-02  3.692e-03  -2.850  0.00441 ** 
+const         5.517e-06  1.354e-04   0.041  0.96749    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.006876 on 2575 degrees of freedom
+Multiple R-Squared: 0.2706,	Adjusted R-squared: 0.2692 
+F-statistic: 191.1 on 5 and 2575 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation cny: 
+==================================== 
+cny = jpy.l1 + can.l1 + cny.l1 + interest.l1 + inflation.l1 + const 
+
+               Estimate Std. Error t value Pr(>|t|)    
+jpy.l1        8.753e-03  4.936e-03   1.773  0.07631 .  
+can.l1        1.720e-02  5.239e-03   3.283  0.00104 ** 
+cny.l1       -5.238e-01  1.711e-02 -30.613  < 2e-16 ***
+interest.l1   1.867e-03  1.447e-03   1.290  0.19715    
+inflation.l1 -1.369e-03  1.102e-03  -1.242  0.21417    
+const         5.810e-07  4.041e-05   0.014  0.98853    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.002053 on 2575 degrees of freedom
+Multiple R-Squared: 0.2681,	Adjusted R-squared: 0.2667 
+F-statistic: 188.6 on 5 and 2575 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation interest: 
+========================================= 
+interest = jpy.l1 + can.l1 + cny.l1 + interest.l1 + inflation.l1 + const 
+
+               Estimate Std. Error t value Pr(>|t|)    
+jpy.l1       -2.173e-01  6.525e-02  -3.330  0.00088 ***
+can.l1        1.472e-01  6.925e-02   2.126  0.03363 *  
+cny.l1       -1.201e-01  2.262e-01  -0.531  0.59563    
+interest.l1  -4.788e-01  1.913e-02 -25.024  < 2e-16 ***
+inflation.l1  9.792e-03  1.457e-02   0.672  0.50151    
+const        -8.721e-06  5.341e-04  -0.016  0.98697    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.02714 on 2575 degrees of freedom
+Multiple R-Squared: 0.2563,	Adjusted R-squared: 0.2548 
+F-statistic: 177.5 on 5 and 2575 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation inflation: 
+========================================== 
+inflation = jpy.l1 + can.l1 + cny.l1 + interest.l1 + inflation.l1 + const 
+
+               Estimate Std. Error t value Pr(>|t|)    
+jpy.l1        0.1311361  0.0652451   2.010   0.0445 *  
+can.l1        0.0273033  0.0692419   0.394   0.6934    
+cny.l1       -0.2248242  0.2261681  -0.994   0.3203    
+interest.l1  -0.0229320  0.0191327  -1.199   0.2308    
+inflation.l1 -0.4166601  0.0145663 -28.604   <2e-16 ***
+const        -0.0003728  0.0005341  -0.698   0.4852    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.02713 on 2575 degrees of freedom
+Multiple R-Squared: 0.2673,	Adjusted R-squared: 0.2659 
+F-statistic: 187.9 on 5 and 2575 DF,  p-value: < 2.2e-16 
+
+
+
+Covariance matrix of residuals:
+                jpy        can        cny   interest  inflation
+jpy       5.803e-05  2.761e-06  1.349e-06  7.468e-05  4.656e-05
+can       2.761e-06  4.729e-05  2.371e-06 -3.823e-05 -4.739e-05
+cny       1.349e-06  2.371e-06  4.214e-06 -9.232e-07 -1.615e-06
+interest  7.468e-05 -3.823e-05 -9.232e-07  7.363e-04  3.091e-04
+inflation 4.656e-05 -4.739e-05 -1.615e-06  3.091e-04  7.362e-04
+
+Correlation matrix of residuals:
+              jpy      can      cny interest inflation
+jpy       1.00000  0.05271  0.08630  0.36131    0.2253
+can       0.05271  1.00000  0.16800 -0.20488   -0.2540
+cny       0.08630  0.16800  1.00000 -0.01657   -0.0290
+interest  0.36131 -0.20488 -0.01657  1.00000    0.4199
+inflation 0.22525 -0.25398 -0.02900  0.41987    1.0000
+
